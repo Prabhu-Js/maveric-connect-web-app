@@ -1,0 +1,14 @@
+.header{
+    
+    background-color: white;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: -1%;
+    bottom: 84%;
+    left: 0;
+    z-index: 5;
+    border-style:inset;
+    border-color: lightgray;
+    border-width: .1em;   
+}
