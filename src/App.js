@@ -3,6 +3,7 @@ import SignupPage from "./pages/SignupPage";
 import LoginPage from "./pages/LoginPage";
 import PostListsPage from "./pages/PostListsPage";
 import PostDetailsPage from "./pages/PostDetailsPage";
+import PostListItems from "./components/PostListItem";
 
 
 

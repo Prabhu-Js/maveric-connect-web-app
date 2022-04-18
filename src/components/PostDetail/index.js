@@ -29,7 +29,7 @@ const PostDetail = () => {
   };
   const getComments = () => {
     axios
-      .get(Endpoints.GET_POSTS_URL + "/" + id + "/comments")
+      .get(Endpoints.GET_COMMENTS_BY_POSTID + "/" + id + "/comments")
       .then((response) => {
         setComments(response.data);
       })
@@ -63,10 +63,11 @@ const PostDetail = () => {
                   </p>
                 </p>
                 
-                <p style={{
+                <p class="text-justify" style={{
                       fontSize: "15px",
                       color: "#224f8f",
-                      marginLeft: "2%",
+                      marginLeft: "5%",
+                      width: "130%"
                     }}>{users.post}</p>
               </div>
               </div>

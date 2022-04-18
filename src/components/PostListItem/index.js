@@ -5,8 +5,7 @@ import logo from "../../logos/profile-img.png";
 import likesLogo from "../../logos/like-img.png";
 import commentsLogo from "../../logos/comment-img.png";
 import "./style.css";
-import { useNavigate } from "react-router-dom";
-import { postList } from "../../mock/postList";
+import { Link, useNavigate } from "react-router-dom";
 
 const PostListItems = () => {
   const [users, setUsers] = useState([]);
@@ -27,8 +26,6 @@ const PostListItems = () => {
   return (
     <div className="post-list">
       <h3 className="text-center"></h3>
-
-      {/* {users.map((customer) => ( */}
       {users.map((customer) => (
         <div key={customer.id} className="container">
           <div class="list-group">
@@ -51,14 +48,14 @@ const PostListItems = () => {
                     style={{
                       fontSize: "15px",
                       color: "#224f8f",
-                      marginLeft: "15%",
+                      marginLeft: "15%"
                     }}
                   >
                     {customer.postedBy.firstName}
                   </p>
                 </p>
                 &nbsp; &nbsp; &nbsp;
-                <span>{customer.post}</span>
+                <span style={{ width: "130%"}}>{customer.post}</span>
               </div>
 
               <div class="d-flex w-100 justify-content-between">
